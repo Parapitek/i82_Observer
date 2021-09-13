@@ -1,11 +1,17 @@
 ﻿// i82_Observer.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
 //
 
-#include <iostream>
+#include "WeatherDaata.h"
+#include "CurrentCondidtionDisplay.h"
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    WeatherData* weatherData = new WeatherData();
+    CurrentCondidtionDisplay* currentDisplay = new CurrentCondidtionDisplay(weatherData);
+
+    weatherData->setMeasurements(15, 60, 772);
+
+    return 0;
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"

@@ -12,5 +12,4 @@ void CurrentCondidtionDisplay::update(float t, float h, float p) {
 void CurrentCondidtionDisplay::display() {
 	cout << "Current conditions: " << temperature << "C degrees and "
 		<< humidity << "% humidity" << endl;
-
 }
